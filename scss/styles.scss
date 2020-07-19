@@ -1,4 +1,5 @@
 $bgBlockColor: #F7F7F7;
+$bgDarkColor: #404149;
 
 @mixin red-contact(){
   background-color: #F7654A;
@@ -19,7 +20,7 @@ $bgBlockColor: #F7F7F7;
 
 body{
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, serif;
 }
 
 /* Header styles */
@@ -45,8 +46,8 @@ body{
 
 .years-info{
   @include flex;
-  margin: 0px 30%;
-  padding: 2em 0px;
+  margin: 0 30%;
+  padding: 2em 0;
   background-color: $bgBlockColor;
   margin-top: -5em;
 }
@@ -58,7 +59,7 @@ body{
 }
 
 .years-info__year p{
-  margin: 0px;
+  margin: 0;
 }
 
 .years-info__number-of-years{
@@ -82,7 +83,7 @@ body{
   @include flex;
   @include padding-small;
   justify-content: space-around;
-  background-color: #404149;
+  background-color: $bgDarkColor;
   color: white;
 }
 
@@ -111,7 +112,7 @@ body{
 .main-info__title{
   margin-top: 1em;
   margin-bottom: 1em;
-  font-size: 150%;
+  font-size: 200%;
 }
 .main-info{
   @include padding-small;
@@ -123,6 +124,66 @@ body{
 .main-info__jobs{
   @include flex;
 }
+
+.main-info__reviews{
+  @include flex;
+  text-align: left;
+}
+
+.main-info__review{
+  width: 20%;
+  margin: 0 2em;
+  text-transform: none;
+  font-weight: normal;
+  color: darkgray;
+}
+
+.main-info__description{
+  background-color: $bgBlockColor;
+  padding: 2em;
+}
+
+.main-info__from{
+  margin-top: 1em;
+  color: black;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.main-info__review-company{
+  color: #F7654A;
+}
+
+.main-info__contacts{
+  @include flex;
+  text-transform: uppercase;
+  font-size: 150%;
+}
+
+.main-info__contact{
+  margin: 2em;
+}
+
+.main-info__contact-icon{
+  width: auto;
+  height: 50px;
+  margin-bottom: 1em;
+}
+
+.main-info__contact-type{
+  color: gray;
+  margin-bottom: 1em;
+}
+
+.main-info__contact-email{
+  color: #F7654A;
+}
+
+.main-info__quotes{
+  width: 40px;
+  height: auto;
+}
+
 
 // TODO Change styles so jobs won't be large
 .main-info__job{
@@ -230,4 +291,40 @@ body{
 .projects-samples__img{
   width: 33.33%;
   height: auto;
+}
+
+/* Partners styles */
+
+.partners-info{
+  background-color: $bgDarkColor;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.partners-info__title{
+  padding: 2em 0;
+  font-size: 200%;
+}
+
+.partners-info__partners{
+  @include flex;
+}
+
+.partners-info__partner{
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 5em;
+}
+
+.partners-info__type{
+  color: gray;
+}
+
+.partners-info__name{
+  font-size: 250%;
+}
+
+.partners-info__special-letter{
+  color: gold;
 }

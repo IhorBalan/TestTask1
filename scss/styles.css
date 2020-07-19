@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, serif;
 }
 
 /* Header styles */
@@ -26,8 +26,8 @@ body {
 .years-info {
   display: flex;
   justify-content: center;
-  margin: 0px 30%;
-  padding: 2em 0px;
+  margin: 0 30%;
+  padding: 2em 0;
   background-color: #F7F7F7;
   margin-top: -5em;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .years-info__year p {
-  margin: 0px;
+  margin: 0;
 }
 
 .years-info__number-of-years {
@@ -93,7 +93,7 @@ body {
 .main-info__title {
   margin-top: 1em;
   margin-bottom: 1em;
-  font-size: 150%;
+  font-size: 200%;
 }
 
 .main-info {
@@ -107,6 +107,67 @@ body {
 .main-info__jobs {
   display: flex;
   justify-content: center;
+}
+
+.main-info__reviews {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.main-info__review {
+  width: 20%;
+  margin: 0 2em;
+  text-transform: none;
+  font-weight: normal;
+  color: darkgray;
+}
+
+.main-info__description {
+  background-color: #F7F7F7;
+  padding: 2em;
+}
+
+.main-info__from {
+  margin-top: 1em;
+  color: black;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.main-info__review-company {
+  color: #F7654A;
+}
+
+.main-info__contacts {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 150%;
+}
+
+.main-info__contact {
+  margin: 2em;
+}
+
+.main-info__contact-icon {
+  width: auto;
+  height: 50px;
+  margin-bottom: 1em;
+}
+
+.main-info__contact-type {
+  color: gray;
+  margin-bottom: 1em;
+}
+
+.main-info__contact-email {
+  color: #F7654A;
+}
+
+.main-info__quotes {
+  width: 40px;
+  height: auto;
 }
 
 .main-info__job {
@@ -218,6 +279,42 @@ body {
 .projects-samples__img {
   width: 33.33%;
   height: auto;
+}
+
+/* Partners styles */
+.partners-info {
+  background-color: #404149;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.partners-info__title {
+  padding: 2em 0;
+  font-size: 200%;
+}
+
+.partners-info__partners {
+  display: flex;
+  justify-content: center;
+}
+
+.partners-info__partner {
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 5em;
+}
+
+.partners-info__type {
+  color: gray;
+}
+
+.partners-info__name {
+  font-size: 250%;
+}
+
+.partners-info__special-letter {
+  color: gold;
 }
 
 /*# sourceMappingURL=styles.css.map */
