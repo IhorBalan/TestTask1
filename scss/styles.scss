@@ -1,0 +1,233 @@
+$bgBlockColor: #F7F7F7;
+
+@mixin red-contact(){
+  background-color: #F7654A;
+  color: white;
+  display: flex;
+  text-transform: uppercase;
+}
+
+@mixin flex(){
+  display: flex;
+  justify-content: center;
+}
+
+@mixin padding-small{
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+body{
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Header styles */
+
+.header__logo img{
+  height: 5em;
+  width: auto;
+}
+
+.header{
+  @include flex;
+  background-image: url("../img/bridge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  flex-direction: column;
+  padding: 7em;
+}
+
+/* Years info styles */
+
+.years-info{
+  @include flex;
+  margin: 0px 30%;
+  padding: 2em 0px;
+  background-color: $bgBlockColor;
+  margin-top: -5em;
+}
+
+.years-info__year{
+  @include flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.years-info__year p{
+  margin: 0px;
+}
+
+.years-info__number-of-years{
+  color: #F7654A;
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.years-info__year-text{
+  color: black;
+  font-weight: bold;
+}
+
+.years-info__market-text{
+  color: darkgray;
+}
+
+/* Footer styles */
+
+.footer{
+  @include flex;
+  @include padding-small;
+  justify-content: space-around;
+  background-color: #404149;
+  color: white;
+}
+
+/* Main info styles */
+
+.main-info__menu-title{
+  color: #F7654A;
+  font-size: 150%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.main-info__menu-description {
+  text-transform: none;
+  color: darkgray;
+  display: none;
+  width: 70%;
+}
+
+.main-info__menu{
+  text-align: left;
+  padding-left: 20%;
+}
+
+.main-info__title{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 150%;
+}
+.main-info{
+  @include padding-small;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-info__jobs{
+  @include flex;
+}
+
+// TODO Change styles so jobs won't be large
+.main-info__job{
+  flex-wrap: nowrap;
+  background-color: $bgBlockColor;
+  width: 20%;
+  margin: 1em;
+  padding: 4em 1em;
+}
+
+.main-info__job-image{
+  width: 4em;
+  height: auto;
+}
+
+/* Project info styles */
+
+.projects-info__projects{
+  @include flex;
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.projects-info__project{
+  width: 20%;
+}
+
+.projects-info__title{
+  text-align: center;
+  padding-top: 1em;
+  font-size: 150%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.projects-info__img{
+  width: 100%;
+  height: auto;
+  padding-bottom: 1em;
+}
+
+.projects-info__line{
+  padding: 2px;
+  width: 30px;
+  background-color: #F7654A;
+}
+
+.projects-info__project-caption{
+  width: 100%;
+  text-transform: none;
+  text-align: left;
+  font-weight: normal;
+  color: gray;
+  font-size: 70%;
+}
+
+.projects-info__project-name{
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* Contact info styles */
+
+.contact-info__title{
+  font-size: 200%;
+}
+
+.contact-info{
+  @include red-contact;
+  @include padding-small;
+  @include flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info__information{
+  @include flex;
+  flex-direction: column;
+}
+
+.contact-info__img{
+  width: auto;
+  height: 1.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.2em;
+  vertical-align: middle;
+}
+
+.contact-info_btn{
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  font-size: 70%;
+}
+
+/* Project Samples styles */
+
+.projects-samples__line{
+  @include flex;
+}
+
+// TODO check how to place image without width: 33.33%
+.projects-samples__img{
+  width: 33.33%;
+  height: auto;
+}
