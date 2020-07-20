@@ -134,13 +134,13 @@ body {
   font-size: 24px;
   line-height: 36px;
   cursor: pointer;
+  outline: none;
 }
 
 .main-info__menu-description {
   margin-top: 22px;
   text-transform: none;
   color: #999999;
-  display: none;
   width: 50%;
   font-family: "Open Sans", serif;
   font-style: normal;
@@ -471,6 +471,95 @@ body {
 @media (max-width: 1440px) {
   .header__title {
     margin: 112px 20% 0 20%;
+  }
+}
+@media (max-width: 1024px) {
+  .header__title {
+    margin: 112px 10% 0 10%;
+  }
+
+  .contact-info__title {
+    font-size: 32px;
+  }
+
+  .contact-info__subtitle {
+    font-size: 18px;
+  }
+
+  .contact-info {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .partners-info__img {
+    width: 135px;
+    height: 45px;
+  }
+
+  .partners-info__partner {
+    margin: 0 16px;
+  }
+
+  .projects-info__img {
+    width: 250px;
+    height: auto;
+  }
+
+  .main-info__contacts {
+    padding: 0 10%;
+  }
+}
+@media only screen and (max-device-width: 425px) {
+  .projects-info__projects {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 21%;
+    padding-right: 21%;
+    margin-bottom: 120px;
+  }
+
+  .projects-info__line {
+    margin-left: 145px;
+    margin-top: 40px;
+    width: 250px;
+    height: 6px;
+    background-color: #F7654A;
+  }
+
+  .projects-info__project {
+    margin-bottom: 50px;
+  }
+
+  .projects-info__project-caption {
+    text-align: justify;
+    padding-left: 145px;
+    padding-right: 145px;
+  }
+
+  .main-info__jobs-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-samples__img {
+    width: 50%;
+  }
+
+  .main-info__menu-description {
+    width: 80%;
+  }
+
+  .main-info__reviews {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-info__review {
+    margin-bottom: 100px;
+  }
+
+  .main-info__from {
+    text-align: center;
   }
 }
 
