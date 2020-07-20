@@ -3,52 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href='css/fonts.css' rel='stylesheet'>
     <link rel="stylesheet" href="scss/styles.css">
 </head>
 <body>
 <!-- Header -->
 <header class="header">
-    <div class="header__logo">
-        <img src="img/logo.png" alt="logo">
+    <div class="header__menu">
+        <img class="header__logo" src="img/logo.svg" alt="logo">
+        <img class="header__hamburger-menu" src="img/menu-hamburger.svg" alt="menu">
     </div>
     <nav class="header__nav">
     </nav>
-    <div class="header__title">
-        <h1>Реализуем крупнейшые<br> проекты в Росии</h1>
-    </div>
+    <div class="header__title">Реализуем крупнейшие проекты в России</div>
     <div class="header__subtitle">
         Стадионы, Газопроводы, мосты, дамбы
     </div>
+    <!-- Info about years on market -->
+    <section class="header__years-info">
+        <div class="header__year">
+            <div class="header__number-of-years">26</div>
+            <div class="header__year-text">ЛЕТ</div>
+            <div class="header__market-text">на рынке</div>
+        </div>
+        <div class="header__year">
+            <p class="header__number-of-years">26</p>
+            <p class="header__year-text">ЛЕТ</p>
+            <p class="header__market-text">на рынке</p>
+        </div>
+        <div class="header__year">
+            <p class="header__number-of-years">26</p>
+            <p class="header__year-text">ЛЕТ</p>
+            <p class="header__market-text">на рынке</p>
+        </div>
+        <div class="header__year">
+            <p class="header__number-of-years">26</p>
+            <p class="header__year-text">ЛЕТ</p>
+            <p class="header__market-text">на рынке</p>
+        </div>
+    </section>
+    <!-- // Info about years on market -->
 </header>
 <!-- // Header -->
 
 <!-- Main -->
 <main>
-    <!-- Info about years on market -->
-    <section class="years-info">
-        <div class="years-info__year">
-            <p class="years-info__number-of-years">26</p>
-            <p class="years-info__year-text">ЛЕТ</p>
-            <p class="years-info__market-text">на рынке</p>
-        </div>
-        <div class="years-info__year">
-            <p class="years-info__number-of-years">26</p>
-            <p class="years-info__year-text">ЛЕТ</p>
-            <p class="years-info__market-text">на рынке</p>
-        </div>
-        <div class="years-info__year">
-            <p class="years-info__number-of-years">26</p>
-            <p class="years-info__year-text">ЛЕТ</p>
-            <p class="years-info__market-text">на рынке</p>
-        </div>
-        <div class="years-info__year">
-            <p class="years-info__number-of-years">26</p>
-            <p class="years-info__year-text">ЛЕТ</p>
-            <p class="years-info__market-text">на рынке</p>
-        </div>
-    </section>
-    <!-- // Info about years on market -->
-
     <!-- Info about projects -->
     <section class="projects-info">
         <div class="projects-info__title">
@@ -105,10 +104,10 @@
     <div class="contact-info">
         <div class="contact-info__information">
             <div class='contact-info__title'>Самые умные проекты</div>
-            <div class='contact-info__subtitle'>реализуем самые смелые решения в росии!</div>
+            <div class='contact-info__subtitle'>реализуем самые смелые решения в россии!</div>
         </div>
-        <button class="contact-info_btn">
-            <img class="contact-info__img" src="img/email.png" alt="email"/>
+        <button class="contact-info__btn">
+            <img class="contact-info__img" src="img/email-icon.svg" alt="email"/>
             Ваш запрос
         </button>
     </div>
@@ -117,45 +116,59 @@
     <!-- Job info -->
     <section class="main-info">
         <div class="main-info__title">
-            Чем мы занимаемся
+            Чем мы занимаемся?
         </div>
         <div class="main-info__jobs">
-            <div class="main-info__job">
-                <img class="main-info__job-image" src="img/building.png" alt="building">
-                <div class="main-info__job-description">
-                    Строительство <br /> офисных зданий
+            <div class="main-info__jobs-row">
+                <div class="main-info__job">
+                    <div>
+                        <img class="main-info__job-image" src="img/building-icon.svg" alt="building">
+                    </div>
+                    <div class="main-info__job-description">
+                        Строительство <br /> офисных зданий
+                    </div>
+                </div>
+                <div class="main-info__job">
+                    <div>
+                        <img class="main-info__job-image" src="img/building-icon.svg" alt="building">
+                    </div>
+                    <div class="main-info__job-description">
+                        Строительство <br /> офисных зданий
+                    </div>
+                </div>
+                <div class="main-info__job">
+                    <div>
+                        <img class="main-info__job-image" src="img/building-icon.svg" alt="building">
+                    </div>
+                    <div class="main-info__job-description">
+                        Строительство <br /> офисных зданий
+                    </div>
                 </div>
             </div>
-            <div class="main-info__job">
-                <img class="main-info__job-image" src="img/building.png" alt="building">
-                <div class="main-info__job-description">
-                    Строительство <br /> офисных зданий
+            <div class="main-info__jobs-row">
+                <div class="main-info__job">
+                    <div>
+                        <img class="main-info__job-image" src="img/building-icon.svg" alt="building">
+                    </div>
+                    <div class="main-info__job-description">
+                        Строительство <br /> офисных зданий
+                    </div>
                 </div>
-            </div>
-            <div class="main-info__job">
-                <img class="main-info__job-image" src="img/building.png" alt="building">
-                <div class="main-info__job-description">
-                    Строительство <br /> офисных зданий
+                <div class="main-info__job">
+                    <div>
+                        <img class="main-info__job-image" src="img/building-icon.svg" alt="building">
+                    </div>
+                    <div class="main-info__job-description">
+                        Строительство <br /> офисных зданий
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="main-info__jobs">
-            <div class="main-info__job">
-                <img class="main-info__job-image" src="img/building.png" alt="building">
-                <div class="main-info__job-description">
-                    Строительство <br /> офисных зданий
-                </div>
-            </div>
-            <div class="main-info__job">
-                <img class="main-info__job-image" src="img/building.png" alt="building">
-                <div class="main-info__job-description">
-                    Строительство <br /> офисных зданий
-                </div>
-            </div>
-            <div class="main-info__job">
-                <img class="main-info__job-image" src="img/building.png" alt="building">
-                <div class="main-info__job-description">
-                    Строительство <br /> офисных зданий
+                <div class="main-info__job">
+                    <div>
+                        <img class="main-info__job-image" src="img/building-icon.svg" alt="building">
+                    </div>
+                    <div class="main-info__job-description">
+                        Строительство <br /> офисных зданий
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,16 +177,14 @@
 
     <!-- Projects samples -->
     <section class="projects-samples">
-        <div class="projects-samples__line">
             <img class="projects-samples__img" src="img/city.jpg" alt="city building">
             <img class="projects-samples__img" src="img/city.jpg" alt="city building">
             <img class="projects-samples__img" src="img/city.jpg" alt="city building">
-        </div>
-        <div class="projects-samples__line">
             <img class="projects-samples__img" src="img/city.jpg" alt="city building">
             <img class="projects-samples__img" src="img/city.jpg" alt="city building">
             <img class="projects-samples__img" src="img/city.jpg" alt="city building">
-        </div>
+            <img class="projects-samples__img" src="img/city.jpg" alt="city building">
+            <img class="projects-samples__img" src="img/city.jpg" alt="city building">
     </section>
     <!-- // Projects samples -->
 
@@ -183,35 +194,37 @@
             Ответы на вопросы
         </div>
         <div class="main-info__menu">
-            <div class="main-info__menu-title">
-                <span class="main-info__icon">▶</span> Работаете ли вы по 249 ФЗ?
+            <div class="main-info__menu-row">
+                <div class="main-info__menu-title">
+                    <span class="main-info__icon">▶</span> Работаете ли вы по 249 ФЗ?
+                </div>
+                <div class="main-info__menu-description">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                </div>
             </div>
-            <div class="main-info__menu-description">
-                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+            <div class="main-info__menu-row">
+                <div class="main-info__menu-title">
+                    <span class="main-info__icon">▶</span> Работаете ли вы по 249 ФЗ?
+                </div>
+                <div class="main-info__menu-description">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                </div>
             </div>
-        </div>
-        <div class="main-info__menu">
-            <div class="main-info__menu-title">
-                <span class="main-info__icon">▶</span> Работаете ли вы по 249 ФЗ?
+            <div class="main-info__menu-row">
+                <div class="main-info__menu-title">
+                    <span class="main-info__icon">▶</span> Работаете ли вы по 249 ФЗ?
+                </div>
+                <div class="main-info__menu-description">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                </div>
             </div>
-            <div class="main-info__menu-description">
-                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
-            </div>
-        </div>
-        <div class="main-info__menu">
-            <div class="main-info__menu-title">
-                <span class="main-info__icon">▶</span> Работаете ли вы по 249 ФЗ?
-            </div>
-            <div class="main-info__menu-description">
-                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
-            </div>
-        </div>
-        <div class="main-info__menu">
-            <div class="main-info__menu-title">
-                <span class="main-info__icon">▶</span> Работаете ли вы по 249 ФЗ?
-            </div>
-            <div class="main-info__menu-description">
-                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+            <div class="main-info__menu-row">
+                <div class="main-info__menu-title">
+                    <span class="main-info__icon">▶</span> Работаете ли вы по 249 ФЗ?
+                </div>
+                <div class="main-info__menu-description">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                </div>
             </div>
         </div>
     </section>
@@ -224,44 +237,19 @@
         </div>
         <div class="partners-info__partners">
             <div class="partners-info__partner">
-                <div class="partners-info__type">
-                    Construction
-                </div>
-                <div class="partners-info__name">
-                    Berksh<span class="partners-info__special-letter">o</span>
-                </div>
+                <img class="partners-info__img" src="img/berksho.svg" alt="Berksho">
             </div>
             <div class="partners-info__partner">
-                <div class="partners-info__type">
-                    Construction
-                </div>
-                <div class="partners-info__name">
-                    Berksh<span class="partners-info__special-letter">o</span>
-                </div>
+                <img class="partners-info__img" src="img/berksho.svg" alt="Berksho">
             </div>
             <div class="partners-info__partner">
-                <div class="partners-info__type">
-                    Construction
-                </div>
-                <div class="partners-info__name">
-                    Berksh<span class="partners-info__special-letter">o</span>
-                </div>
+                <img class="partners-info__img" src="img/berksho.svg" alt="Berksho">
             </div>
             <div class="partners-info__partner">
-                <div class="partners-info__type">
-                    Construction
-                </div>
-                <div class="partners-info__name">
-                    Berksh<span class="partners-info__special-letter">o</span>
-                </div>
+                <img class="partners-info__img" src="img/berksho.svg" alt="Berksho">
             </div>
             <div class="partners-info__partner">
-                <div class="partners-info__type">
-                    Construction
-                </div>
-                <div class="partners-info__name">
-                    Berksh<span class="partners-info__special-letter">o</span>
-                </div>
+                <img class="partners-info__img" src="img/berksho.svg" alt="Berksho">
             </div>
         </div>
     </section>
@@ -275,8 +263,8 @@
         <div class="main-info__reviews">
             <div class="main-info__review">
                 <div class="main-info__description">
-                    <img class="main-info__quotes" src="img/quotes.png" alt=""><br />
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                    <img class="main-info__quotes" src="img/quotes-icon.svg" alt=""><br />
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
                 </div>
                 <div class="main-info__from">
                     Иванов Иван, <span class="main-info__review-company">ООО "Газпром-Арена"</span>
@@ -284,8 +272,8 @@
             </div>
             <div class="main-info__review">
                 <div class="main-info__description">
-                    <img class="main-info__quotes" src="img/quotes.png" alt=""><br />
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                    <img class="main-info__quotes" src="img/quotes-icon.svg" alt=""><br />
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
                 </div>
                 <div class="main-info__from">
                     Иванов Иван, <span class="main-info__review-company">ООО "Газпром-Арена"</span>
@@ -293,8 +281,8 @@
             </div>
             <div class="main-info__review">
                 <div class="main-info__description">
-                    <img class="main-info__quotes" src="img/quotes.png" alt=""><br />
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                    <img class="main-info__quotes" src="img/quotes-icon.svg" alt=""><br />
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
                 </div>
                 <div class="main-info__from">
                     Иванов Иван, <span class="main-info__review-company">ООО "Газпром-Арена"</span>
@@ -308,23 +296,23 @@
     <div class="contact-info">
         <div class="contact-info__information">
             <div class='contact-info__title'>Хотите с нами работать?</div>
-            <div class='contact-info__subtitle'>Оставьте заявку и мы с вами свяжемся</div>
+            <div class='contact-info__subtitle'>Оставьте заявку и мы свяжемся с вами!</div>
         </div>
-        <button class="contact-info_btn">
-            <img class="contact-info__img" src="img/email.png" alt="email"/>
+        <button class="contact-info__btn">
+            <img class="contact-info__img" src="img/email-icon.svg" alt="email"/>
             Ваш запрос
         </button>
     </div>
     <!-- // Contact info -->
 
     <!-- Contacts -->
-    <section class="main-info">
+    <section class="main-info small-padding-top">
         <div class="main-info__title">
             Контакты
         </div>
         <div class="main-info__contacts">
             <div class="main-info__contact">
-                <img class="main-info__contact-icon" src="img/contact1.png" alt="">
+                <img class="main-info__contact-icon" src="img/contact-address-icon.svg" alt="">
                 <div class="main-info__contact-type">
                     Адрес:
                 </div>
@@ -333,7 +321,7 @@
                 </div>
             </div>
             <div class="main-info__contact">
-                <img class="main-info__contact-icon" src="img/contact2.png" alt="">
+                <img class="main-info__contact-icon" src="img/contact-phone-icon.svg" alt="">
                 <div class="main-info__contact-type">
                     Телефон:
                 </div>
@@ -342,7 +330,7 @@
                 </div>
             </div>
             <div class="main-info__contact">
-                <img class="main-info__contact-icon" src="img/contact3.png" alt="">
+                <img class="main-info__contact-icon" src="img/contact-time-icon.svg" alt="">
                 <div class="main-info__contact-type">
                     Время работы:
                 </div>
@@ -351,7 +339,7 @@
                 </div>
             </div>
             <div class="main-info__contact">
-                <img class="main-info__contact-icon" src="img/contact4.png" alt="">
+                <img class="main-info__contact-icon" src="img/contact-email-icon.svg" alt="">
                 <div class="main-info__contact-type">
                     E-Mail:
                 </div>

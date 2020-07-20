@@ -1,138 +1,213 @@
 body {
   margin: 0;
-  font-family: Arial, serif;
+  font-family: "Oswald", serif;
 }
 
 /* Header styles */
-.header__logo img {
-  height: 5em;
-  width: auto;
+.header__logo {
+  height: 60px;
+  width: 60px;
+  margin-top: 20px;
+  margin-left: 21%;
+}
+
+.header__hamburger-menu {
+  height: 50px;
+  width: 50px;
+  margin-top: 30px;
+  margin-right: 21%;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  background-image: url("../img/bridge.jpg");
+  height: 740px;
+  background-image: url("../img/main-background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
+  background-size: auto;
+  position: relative;
+  color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
-  flex-direction: column;
-  padding: 7em;
 }
 
-/* Years info styles */
-.years-info {
+.header__title {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  margin: 112px 31% 0 31%;
+}
+
+.header__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 19px;
+}
+
+.header__years-info {
   display: flex;
   justify-content: center;
-  margin: 0 30%;
-  padding: 2em 0;
   background-color: #F7F7F7;
-  margin-top: -5em;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 58%;
 }
 
-.years-info__year {
+.header__year {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 1em;
+  width: 17.117%;
+  height: 300px;
+  margin: 0 15px;
 }
 
-.years-info__year p {
+.header__year p {
   margin: 0;
 }
 
-.years-info__number-of-years {
+.header__number-of-years {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 107px;
   color: #F7654A;
-  font-size: 300%;
-  font-weight: bold;
 }
 
-.years-info__year-text {
+.header__year-text {
   color: black;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
 }
 
-.years-info__market-text {
-  color: darkgray;
+.header__market-text {
+  color: #999999;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: none;
 }
 
 /* Footer styles */
 .footer {
   display: flex;
   justify-content: center;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  justify-content: space-around;
+  padding: 30px 21%;
+  font-family: "Open Sans", serif;
+  justify-content: space-between;
   background-color: #404149;
-  color: white;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /* Main info styles */
-.main-info__menu-title {
-  color: #F7654A;
-  font-size: 150%;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  cursor: pointer;
-}
-
-.main-info__menu-description {
-  text-transform: none;
-  color: darkgray;
-  display: none;
-  width: 70%;
-}
-
-.main-info__menu {
-  text-align: left;
-  padding-left: 20%;
-}
-
-.main-info__title {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 200%;
-}
-
 .main-info {
-  padding-top: 1%;
-  padding-bottom: 1%;
+  margin-top: 150px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
 }
 
-.main-info__jobs {
+.main-info__menu {
+  margin-top: 50px;
+  margin-bottom: 140px;
+}
+
+.main-info__menu-title {
+  color: #F7654A;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+.main-info__menu-description {
+  margin-top: 22px;
+  text-transform: none;
+  color: #999999;
+  display: none;
+  width: 50%;
+  font-family: "Open Sans", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.main-info__menu-row {
+  text-align: left;
+  padding-left: 21%;
+  margin-bottom: 35px;
+}
+
+.main-info__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+
+.main-info__jobs-row {
   display: flex;
   justify-content: center;
+}
+
+.main-info__jobs {
+  margin-top: 45px;
+  margin-bottom: 130px;
 }
 
 .main-info__reviews {
   display: flex;
   justify-content: center;
   text-align: left;
+  margin-top: 64px;
+  margin-bottom: 205px;
 }
 
 .main-info__review {
-  width: 20%;
-  margin: 0 2em;
+  width: 350px;
+  height: 259px;
+  margin: 0 15px;
   text-transform: none;
   font-weight: normal;
-  color: darkgray;
+  color: #999999;
 }
 
 .main-info__description {
+  padding: 38px 28px;
   background-color: #F7F7F7;
-  padding: 2em;
+  font-family: "Open Sans", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .main-info__from {
-  margin-top: 1em;
-  color: black;
-  font-size: 120%;
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #404149;
+  margin-top: 28px;
 }
 
 .main-info__review-company {
@@ -144,110 +219,171 @@ body {
   justify-content: center;
   text-transform: uppercase;
   font-size: 150%;
+  padding: 0 21%;
+  margin-top: 60px;
+  margin-bottom: 150px;
 }
 
 .main-info__contact {
-  margin: 2em;
+  width: 255px;
+  height: 191px;
+  margin: 0 15px;
 }
 
 .main-info__contact-icon {
   width: auto;
   height: 50px;
-  margin-bottom: 1em;
+  margin-bottom: 10px;
+}
+
+.main-info__contact-info {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
 }
 
 .main-info__contact-type {
-  color: gray;
-  margin-bottom: 1em;
+  color: #999999;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .main-info__contact-email {
   color: #F7654A;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  text-align: center;
 }
 
 .main-info__quotes {
-  width: 40px;
+  width: 35px;
   height: auto;
+  margin-bottom: 10px;
+}
+
+.main-info__job-description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 
 .main-info__job {
-  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: #F7F7F7;
-  width: 20%;
-  margin: 1em;
-  padding: 4em 1em;
+  width: 350px;
+  height: 250px;
+  margin: 15px 15px;
 }
 
 .main-info__job-image {
   width: 4em;
   height: auto;
+  margin-bottom: 20px;
 }
 
 /* Project info styles */
+.projects-info {
+  margin-top: 250px;
+}
+
 .projects-info__projects {
   display: flex;
   justify-content: center;
   text-align: left;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 21%;
+  padding-right: 21%;
+  margin-bottom: 120px;
 }
 
 .projects-info__project {
-  width: 20%;
+  margin: 0 15px;
 }
 
 .projects-info__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
   text-align: center;
-  padding-top: 1em;
-  font-size: 150%;
-  font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .projects-info__img {
-  width: 100%;
+  width: 350px;
   height: auto;
-  padding-bottom: 1em;
 }
 
 .projects-info__line {
-  padding: 2px;
-  width: 30px;
+  margin-top: 40px;
+  width: 55px;
+  height: 6px;
   background-color: #F7654A;
 }
 
 .projects-info__project-caption {
-  width: 100%;
-  text-transform: none;
-  text-align: left;
+  font-family: "Open Sans", serif;
+  font-style: normal;
   font-weight: normal;
-  color: gray;
-  font-size: 70%;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+  margin-top: 15px;
 }
 
 .projects-info__project-name {
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #404149;
+  margin-top: 17px;
 }
 
 /* Contact info styles */
 .contact-info__title {
-  font-size: 200%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 0.02em;
+}
+
+.contact-info__subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
 }
 
 .contact-info {
   background-color: #F7654A;
-  color: white;
+  color: #FFFFFF;
   display: flex;
   text-transform: uppercase;
-  padding-top: 1%;
-  padding-bottom: 1%;
   display: flex;
   justify-content: center;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 21%;
+  padding-right: 21%;
   justify-content: space-between;
   align-items: center;
+  height: 181px;
 }
 
 .contact-info__information {
@@ -257,64 +393,85 @@ body {
 }
 
 .contact-info__img {
-  width: auto;
-  height: 1.5em;
+  width: 18px;
+  height: 21px;
   padding-right: 0.5em;
   padding-bottom: 0.2em;
   vertical-align: middle;
 }
 
-.contact-info_btn {
-  padding: 0.5em 1em;
+.contact-info__btn {
+  background-color: #FFFFFF;
+  border: 0 solid white;
+  width: 175px;
+  height: 49px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: 70%;
 }
 
 /* Project Samples styles */
-.projects-samples__line {
+.projects-samples {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .projects-samples__img {
-  width: 33.33%;
+  width: 25%;
   height: auto;
 }
 
 /* Partners styles */
 .partners-info {
   background-color: #404149;
-  color: white;
+  color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 100px;
 }
 
 .partners-info__title {
-  padding: 2em 0;
-  font-size: 200%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
 }
 
 .partners-info__partners {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+  padding-bottom: 95px;
 }
 
 .partners-info__partner {
-  margin-left: 3em;
-  margin-right: 3em;
-  margin-bottom: 5em;
+  margin: 0 32px;
 }
 
-.partners-info__type {
-  color: gray;
+.partners-info__img {
+  width: 170px;
+  height: 61px;
 }
 
-.partners-info__name {
-  font-size: 250%;
+/* Override styles */
+.small-padding-top {
+  margin-top: 100px;
 }
 
-.partners-info__special-letter {
-  color: gold;
+/* Media styles*/
+@media (max-width: 1680px) {
+  .header__title {
+    margin: 112px 26% 0 26%;
+  }
+}
+@media (max-width: 1440px) {
+  .header__title {
+    margin: 112px 20% 0 20%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

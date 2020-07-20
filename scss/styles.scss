@@ -1,9 +1,12 @@
-$bgBlockColor: #F7F7F7;
-$bgDarkColor: #404149;
+$colorGray: #F7F7F7;
+$colorDarkGray: #999999;
+$colorDark: #404149;
+$colorAccent: #F7654A;
+$colorWhite: #FFFFFF;
 
 @mixin red-contact(){
-  background-color: #F7654A;
-  color: white;
+  background-color: $colorAccent;
+  color: $colorWhite;
   display: flex;
   text-transform: uppercase;
 }
@@ -13,253 +16,385 @@ $bgDarkColor: #404149;
   justify-content: center;
 }
 
-@mixin padding-small{
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
 body{
   margin: 0;
-  font-family: Arial, serif;
+  font-family: 'Oswald', serif;
 }
 
 /* Header styles */
 
-.header__logo img{
-  height: 5em;
-  width: auto;
+.header__logo{
+  height: 60px;
+  width: 60px;
+  margin-top: 20px;
+  margin-left: 21%;
+}
+
+.header__hamburger-menu{
+  height: 50px;
+  width: 50px;
+  margin-top: 30px;
+  margin-right: 21%;
+}
+
+.header__menu{
+  @include flex;
+  justify-content: space-between;
 }
 
 .header{
-  @include flex;
-  background-image: url("../img/bridge.jpg");
+  height: 740px;
+  background-image: url("../img/main-background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
+  background-size: auto;
+  position: relative;
+  color: $colorWhite;
   text-align: center;
   text-transform: uppercase;
-  flex-direction: column;
-  padding: 7em;
 }
 
-/* Years info styles */
+.header__title{
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  margin: 112px 31% 0 31%;
+}
 
-.years-info{
+.header__subtitle{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 19px;
+}
+
+.header__years-info{
   @include flex;
-  margin: 0 30%;
-  padding: 2em 0;
-  background-color: $bgBlockColor;
-  margin-top: -5em;
+  background-color: $colorGray;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 58%;
 }
 
-.years-info__year{
+.header__year{
   @include flex;
   flex-direction: column;
-  padding: 1em;
+  width: 17.117%;
+  height: 300px;
+  margin: 0 15px;
 }
 
-.years-info__year p{
+.header__year p{
   margin: 0;
 }
 
-.years-info__number-of-years{
-  color: #F7654A;
-  font-size: 300%;
-  font-weight: bold;
+.header__number-of-years{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 107px;
+  color: $colorAccent;
 }
 
-.years-info__year-text{
+.header__year-text{
   color: black;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+
 }
 
-.years-info__market-text{
-  color: darkgray;
+.header__market-text{
+  color: $colorDarkGray;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: none;
 }
-
 /* Footer styles */
 
 .footer{
   @include flex;
-  @include padding-small;
-  justify-content: space-around;
-  background-color: $bgDarkColor;
-  color: white;
+  padding: 30px 21%;
+  font-family: 'Open Sans', serif;
+  justify-content: space-between;
+  background-color: $colorDark;
+  color: $colorWhite;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /* Main info styles */
 
-.main-info__menu-title{
-  color: #F7654A;
-  font-size: 150%;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  cursor: pointer;
-}
-
-.main-info__menu-description {
-  text-transform: none;
-  color: darkgray;
-  display: none;
-  width: 70%;
-}
-
-.main-info__menu{
-  text-align: left;
-  padding-left: 20%;
-}
-
-.main-info__title{
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 200%;
-}
 .main-info{
-  @include padding-small;
+  margin-top: 150px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
 }
 
-.main-info__jobs{
+.main-info__menu{
+  margin-top: 50px;
+  margin-bottom: 140px;
+}
+
+.main-info__menu-title{
+  color: $colorAccent;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+.main-info__menu-description {
+  margin-top: 22px;
+  text-transform: none;
+  color: $colorDarkGray;
+  display: none;
+  width: 50%;
+  font-family: 'Open Sans', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.main-info__menu-row{
+  text-align: left;
+  padding-left: 21%;
+  margin-bottom: 35px;
+}
+
+.main-info__title{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+
+.main-info__jobs-row{
   @include flex;
+}
+
+.main-info__jobs{
+  margin-top: 45px;
+  margin-bottom: 130px;
 }
 
 .main-info__reviews{
   @include flex;
   text-align: left;
+  margin-top: 64px;
+  margin-bottom: 205px;
 }
 
 .main-info__review{
-  width: 20%;
-  margin: 0 2em;
+  width: 350px;
+  height: 259px;
+  margin: 0 15px;
   text-transform: none;
   font-weight: normal;
-  color: darkgray;
+  color: $colorDarkGray;
 }
 
 .main-info__description{
-  background-color: $bgBlockColor;
-  padding: 2em;
+  padding: 38px 28px;
+  background-color: $colorGray;
+  font-family: 'Open Sans', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .main-info__from{
-  margin-top: 1em;
-  color: black;
-  font-size: 120%;
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: $colorDark;
+  margin-top: 28px;
 }
 
 .main-info__review-company{
-  color: #F7654A;
+  color: $colorAccent;
 }
 
 .main-info__contacts{
   @include flex;
   text-transform: uppercase;
   font-size: 150%;
+  padding: 0 21%;
+  margin-top: 60px;
+  margin-bottom: 150px;
 }
 
 .main-info__contact{
-  margin: 2em;
+  width: 255px;
+  height: 191px;
+  margin: 0 15px;
 }
 
 .main-info__contact-icon{
   width: auto;
   height: 50px;
-  margin-bottom: 1em;
+  margin-bottom: 10px;
+}
+
+.main-info__contact-info{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
 }
 
 .main-info__contact-type{
-  color: gray;
-  margin-bottom: 1em;
+  color: $colorDarkGray;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .main-info__contact-email{
-  color: #F7654A;
+  color: $colorAccent;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  text-align: center;
 }
 
 .main-info__quotes{
-  width: 40px;
+  width: 35px;
   height: auto;
+  margin-bottom: 10px;
 }
 
+.main-info__job-description{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
 
-// TODO Change styles so jobs won't be large
 .main-info__job{
-  flex-wrap: nowrap;
-  background-color: $bgBlockColor;
-  width: 20%;
-  margin: 1em;
-  padding: 4em 1em;
+  @include flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: $colorGray;
+  width: 350px;
+  height: 250px;
+  margin: 15px 15px;
 }
 
 .main-info__job-image{
   width: 4em;
   height: auto;
+  margin-bottom: 20px;
 }
 
 /* Project info styles */
 
+.projects-info{
+  margin-top: 250px;
+}
+
 .projects-info__projects{
   @include flex;
   text-align: left;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 21%;
+  padding-right: 21%;
+  margin-bottom: 120px;
 }
 
 .projects-info__project{
-  width: 20%;
+  margin: 0 15px;
 }
 
 .projects-info__title{
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
   text-align: center;
-  padding-top: 1em;
-  font-size: 150%;
-  font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .projects-info__img{
-  width: 100%;
+  width: 350px;
   height: auto;
-  padding-bottom: 1em;
 }
 
 .projects-info__line{
-  padding: 2px;
-  width: 30px;
-  background-color: #F7654A;
+  margin-top: 40px;
+  width: 55px;
+  height: 6px;
+  background-color: $colorAccent;
 }
 
 .projects-info__project-caption{
-  width: 100%;
-  text-transform: none;
-  text-align: left;
+  font-family: 'Open Sans', serif;
+  font-style: normal;
   font-weight: normal;
-  color: gray;
-  font-size: 70%;
+  font-size: 16px;
+  line-height: 22px;
+  color: $colorDarkGray;
+  margin-top: 15px;
 }
 
 .projects-info__project-name{
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: $colorDark;
+  margin-top: 17px;
 }
 
 /* Contact info styles */
 
 .contact-info__title{
-  font-size: 200%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 0.02em;
+}
+
+.contact-info__subtitle{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
 }
 
 .contact-info{
   @include red-contact;
-  @include padding-small;
   @include flex;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 21%;
+  padding-right: 21%;
   justify-content: space-between;
   align-items: center;
+  height: 181px;
 }
 
 .contact-info__information{
@@ -268,63 +403,87 @@ body{
 }
 
 .contact-info__img{
-  width: auto;
-  height: 1.5em;
+  width: 18px;
+  height: 21px;
   padding-right: 0.5em;
   padding-bottom: 0.2em;
   vertical-align: middle;
 }
 
-.contact-info_btn{
-  padding: 0.5em 1em;
+.contact-info__btn{
+  background-color: $colorWhite;
+  border: 0 solid white;
+  width: 175px;
+  height: 49px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: 70%;
 }
 
 /* Project Samples styles */
 
-.projects-samples__line{
+.projects-samples{
   @include flex;
+  flex-wrap: wrap;
 }
 
 // TODO check how to place image without width: 33.33%
 .projects-samples__img{
-  width: 33.33%;
+  width: 25%;
   height: auto;
 }
 
 /* Partners styles */
 
 .partners-info{
-  background-color: $bgDarkColor;
-  color: white;
+  background-color: $colorDark;
+  color: $colorWhite;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 100px;
 }
 
 .partners-info__title{
-  padding: 2em 0;
-  font-size: 200%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
 }
 
 .partners-info__partners{
   @include flex;
+  margin-top: 50px;
+  padding-bottom: 95px;
 }
 
 .partners-info__partner{
-  margin-left: 3em;
-  margin-right: 3em;
-  margin-bottom: 5em;
+  margin: 0 32px;
 }
 
-.partners-info__type{
-  color: gray;
+.partners-info__img{
+  width: 170px;
+  height: 61px;
 }
 
-.partners-info__name{
-  font-size: 250%;
+/* Override styles */
+
+.small-padding-top{
+  margin-top: 100px;
 }
 
-.partners-info__special-letter{
-  color: gold;
+/* Media styles*/
+
+@media (max-width: 1680px) {
+  .header__title{
+    margin: 112px 26% 0 26%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header__title{
+    margin: 112px 20% 0 20%;
+  }
 }
