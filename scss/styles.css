@@ -1,57 +1,37 @@
 body {
   margin: 0;
   font-family: "Oswald", serif;
-}
-
-/* Header styles */
-.header__logo {
-  height: 60px;
-  width: 60px;
-  margin-top: 20px;
-  margin-left: 21%;
-}
-
-.header__hamburger-menu {
-  height: 50px;
-  width: 50px;
-  margin-top: 30px;
-  margin-right: 21%;
-}
-
-.header__menu {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .header {
   height: 740px;
   background-image: url("../img/main-background.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   position: relative;
   color: #FFFFFF;
-  text-align: center;
-  text-transform: uppercase;
 }
-
+.header__content {
+  padding-top: 180px;
+}
 .header__title {
   font-weight: 500;
   font-size: 64px;
   line-height: 95px;
+  font-style: normal;
   letter-spacing: 0.02em;
-  font-style: normal;
-  margin: 112px 31% 0 31%;
+  margin: 0 10%;
 }
-
 .header__subtitle {
-  font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
+  font-style: normal;
+  letter-spacing: normal;
   margin-top: 19px;
 }
-
 .header__years-info {
   display: flex;
   justify-content: center;
@@ -60,9 +40,8 @@ body {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
-  width: 58%;
+  width: 100%;
 }
-
 .header__year {
   display: flex;
   justify-content: center;
@@ -71,108 +50,105 @@ body {
   height: 300px;
   margin: 0 15px;
 }
-
 .header__year p {
   margin: 0;
 }
-
 .header__number-of-years {
-  font-style: normal;
   font-weight: 500;
   font-size: 72px;
   line-height: 107px;
+  font-style: normal;
+  letter-spacing: normal;
   color: #F7654A;
 }
-
 .header__year-text {
-  color: black;
   font-weight: 500;
   font-size: 36px;
   line-height: 53px;
+  font-style: normal;
+  letter-spacing: normal;
+  color: black;
 }
-
 .header__market-text {
-  color: #999999;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #999999;
   text-transform: none;
 }
 
-/* Footer styles */
 .footer {
-  display: flex;
-  justify-content: center;
-  padding: 30px 21%;
-  font-family: "Open Sans", serif;
-  justify-content: space-between;
-  background-color: #404149;
-  color: #FFFFFF;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  font-style: normal;
+  letter-spacing: normal;
+  padding: 30px 0;
+  font-family: "Open Sans", serif;
+  background-color: #404149;
+  color: #FFFFFF;
+}
+.footer__content {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
 }
 
-/* Main info styles */
 .main-info {
-  margin-top: 150px;
+  margin: 150px 0;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
 }
-
 .main-info__menu {
   margin-top: 50px;
   margin-bottom: 140px;
 }
-
 .main-info__menu-title {
-  color: #F7654A;
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #F7654A;
   cursor: pointer;
   outline: none;
 }
-
 .main-info__menu-description {
-  margin-top: 22px;
-  text-transform: none;
-  color: #999999;
-  width: 50%;
-  font-family: "Open Sans", serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  font-style: normal;
+  letter-spacing: normal;
+  margin-top: 22px;
+  text-transform: none;
+  color: #999999;
+  width: 85%;
+  font-family: "Open Sans", serif;
 }
-
 .main-info__menu-row {
   text-align: left;
-  padding-left: 21%;
   margin-bottom: 35px;
 }
-
 .main-info__title {
-  font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 53px;
+  font-style: normal;
+  letter-spacing: normal;
+  margin-bottom: 64px;
   text-transform: uppercase;
 }
-
 .main-info__jobs-row {
   display: flex;
   justify-content: center;
 }
-
 .main-info__jobs {
   margin-top: 45px;
   margin-bottom: 130px;
 }
-
 .main-info__reviews {
   display: flex;
   justify-content: center;
@@ -180,7 +156,6 @@ body {
   margin-top: 64px;
   margin-bottom: 205px;
 }
-
 .main-info__review {
   width: 350px;
   height: 259px;
@@ -189,31 +164,28 @@ body {
   font-weight: normal;
   color: #999999;
 }
-
 .main-info__description {
-  padding: 38px 28px;
-  background-color: #F7F7F7;
-  font-family: "Open Sans", serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-}
-
-.main-info__from {
   font-style: normal;
+  letter-spacing: normal;
+  padding: 38px 28px;
+  background-color: #F7F7F7;
+  font-family: "Open Sans", serif;
+}
+.main-info__from {
   font-weight: 500;
   font-size: 21px;
   line-height: 31px;
+  font-style: normal;
   letter-spacing: 0.02em;
   color: #404149;
   margin-top: 28px;
 }
-
 .main-info__review-company {
   color: #F7654A;
 }
-
 .main-info__contacts {
   display: flex;
   justify-content: center;
@@ -223,62 +195,58 @@ body {
   margin-top: 60px;
   margin-bottom: 150px;
 }
-
 .main-info__contact {
   width: 255px;
   height: 191px;
   margin: 0 15px;
 }
-
 .main-info__contact-icon {
   width: auto;
   height: 50px;
   margin-bottom: 10px;
 }
-
 .main-info__contact-info {
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
+  font-style: normal;
+  letter-spacing: normal;
   text-align: center;
 }
-
 .main-info__contact-type {
-  color: #999999;
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #999999;
   text-align: center;
   margin-bottom: 15px;
 }
-
 .main-info__contact-email {
-  color: #F7654A;
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #F7654A;
   /* identical to box height */
   text-align: center;
 }
-
 .main-info__quotes {
   width: 35px;
   height: auto;
   margin-bottom: 10px;
 }
-
 .main-info__job-description {
-  font-style: normal;
   font-weight: 500;
   font-size: 21px;
   line-height: 31px;
+  font-style: normal;
+  letter-spacing: normal;
   text-align: center;
   letter-spacing: 0.02em;
 }
-
 .main-info__job {
   display: flex;
   justify-content: center;
@@ -290,108 +258,99 @@ body {
   height: 250px;
   margin: 15px 15px;
 }
-
 .main-info__job-image {
   width: 4em;
   height: auto;
   margin-bottom: 20px;
 }
 
-/* Project info styles */
 .projects-info {
   margin-top: 250px;
+  margin-bottom: 150px;
 }
-
 .projects-info__projects {
   display: flex;
   justify-content: center;
   text-align: left;
-  padding-left: 21%;
-  padding-right: 21%;
   margin-bottom: 120px;
 }
-
 .projects-info__project {
   margin: 0 15px;
+  width: 350px;
 }
-
 .projects-info__title {
   font-weight: 500;
   font-size: 36px;
   line-height: 53px;
+  font-style: normal;
+  letter-spacing: normal;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 50px;
 }
-
 .projects-info__img {
-  width: 350px;
+  width: 100%;
   height: auto;
 }
-
 .projects-info__line {
   margin-top: 40px;
   width: 55px;
   height: 6px;
   background-color: #F7654A;
 }
-
 .projects-info__project-caption {
-  font-family: "Open Sans", serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  font-style: normal;
+  letter-spacing: normal;
+  font-family: "Open Sans", serif;
   color: #999999;
   margin-top: 15px;
 }
-
 .projects-info__project-name {
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
+  font-style: normal;
+  letter-spacing: normal;
   color: #404149;
   margin-top: 17px;
-}
-
-/* Contact info styles */
-.contact-info__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 71px;
-  letter-spacing: 0.02em;
-}
-
-.contact-info__subtitle {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: 0.02em;
 }
 
 .contact-info {
   background-color: #F7654A;
   color: #FFFFFF;
-  display: flex;
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  padding-left: 21%;
-  padding-right: 21%;
-  justify-content: space-between;
-  align-items: center;
   height: 181px;
 }
-
+.contact-info__content {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-info__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 71px;
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
+.contact-info__subtitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
 .contact-info__information {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: left;
 }
-
 .contact-info__img {
   width: 18px;
   height: 21px;
@@ -399,33 +358,29 @@ body {
   padding-bottom: 0.2em;
   vertical-align: middle;
 }
-
 .contact-info__btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  letter-spacing: 0.05em;
   background-color: #FFFFFF;
   border: 0 solid white;
   width: 175px;
   height: 49px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-/* Project Samples styles */
 .projects-samples {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .projects-samples__img {
   width: 25%;
   height: auto;
 }
 
-/* Partners styles */
 .partners-info {
   background-color: #404149;
   color: #FFFFFF;
@@ -433,25 +388,22 @@ body {
   text-transform: uppercase;
   padding-top: 100px;
 }
-
 .partners-info__title {
-  font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 53px;
+  font-style: normal;
+  letter-spacing: normal;
 }
-
 .partners-info__partners {
   display: flex;
   justify-content: center;
   margin-top: 50px;
   padding-bottom: 95px;
 }
-
 .partners-info__partner {
   margin: 0 32px;
 }
-
 .partners-info__img {
   width: 170px;
   height: 61px;
@@ -462,31 +414,22 @@ body {
   margin-top: 100px;
 }
 
+.center-block {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
 /* Media styles*/
-@media (max-width: 1680px) {
+@media (max-width: 1280px) {
   .header__title {
-    margin: 112px 26% 0 26%;
-  }
-}
-@media (max-width: 1440px) {
-  .header__title {
-    margin: 112px 20% 0 20%;
-  }
-}
-@media (max-width: 1024px) {
-  .header__title {
-    margin: 112px 10% 0 10%;
+    margin: 0 3%;
   }
 
-  .contact-info__title {
-    font-size: 32px;
+  .header__years-info {
+    width: 58%;
   }
 
-  .contact-info__subtitle {
-    font-size: 18px;
-  }
-
-  .contact-info {
+  .center-block {
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -500,40 +443,27 @@ body {
     margin: 0 16px;
   }
 
-  .projects-info__img {
-    width: 250px;
-    height: auto;
-  }
-
-  .main-info__contacts {
-    padding: 0 10%;
+  .main-info__description {
+    font-size: 12px;
+    padding: 28px 18px;
   }
 }
 @media only screen and (max-device-width: 425px) {
-  .projects-info__projects {
-    flex-direction: column;
-    text-align: center;
-    padding-left: 21%;
-    padding-right: 21%;
-    margin-bottom: 120px;
+  .header__subtitle {
+    font-size: 25px;
   }
 
-  .projects-info__line {
-    margin-left: 145px;
-    margin-top: 40px;
-    width: 250px;
-    height: 6px;
-    background-color: #F7654A;
+  .projects-info__projects {
+    flex-direction: column;
+    align-items: center;
   }
 
   .projects-info__project {
     margin-bottom: 50px;
   }
 
-  .projects-info__project-caption {
-    text-align: justify;
-    padding-left: 145px;
-    padding-right: 145px;
+  .contact-info__btn {
+    font-size: 12px;
   }
 
   .main-info__jobs-row {
@@ -555,7 +485,12 @@ body {
   }
 
   .main-info__review {
+    width: 70%;
     margin-bottom: 100px;
+  }
+
+  .main-info__description {
+    font-size: 20px;
   }
 
   .main-info__from {

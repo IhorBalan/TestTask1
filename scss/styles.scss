@@ -4,440 +4,357 @@ $colorDark: #404149;
 $colorAccent: #F7654A;
 $colorWhite: #FFFFFF;
 
-@mixin red-contact(){
-  background-color: $colorAccent;
-  color: $colorWhite;
-  display: flex;
-  text-transform: uppercase;
-}
-
 @mixin flex(){
   display: flex;
   justify-content: center;
 }
 
+@mixin font($weight: normal, $size: 36px, $height: 53px, $style: normal, $spacing: normal) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  font-style: $style;
+  letter-spacing: $spacing;
+}
+
 body{
   margin: 0;
   font-family: 'Oswald', serif;
-}
-
-/* Header styles */
-
-.header__logo{
-  height: 60px;
-  width: 60px;
-  margin-top: 20px;
-  margin-left: 21%;
-}
-
-.header__hamburger-menu{
-  height: 50px;
-  width: 50px;
-  margin-top: 30px;
-  margin-right: 21%;
-}
-
-.header__menu{
-  @include flex;
-  justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .header{
   height: 740px;
   background-image: url("../img/main-background.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   position: relative;
   color: $colorWhite;
-  text-align: center;
-  text-transform: uppercase;
+
+  &__content{
+    padding-top: 180px;
+  }
+
+  &__title{
+    @include font($weight: 500, $size: 64px, $height: 95px, $spacing: 0.02em);
+    margin: 0 10%;
+  }
+
+  &__subtitle{
+    @include font($size: 18px, $height: 27px);
+    margin-top: 19px;
+  }
+
+  &__years-info{
+    @include flex;
+    background-color: $colorGray;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+  }
+
+  &__year{
+    @include flex;
+    flex-direction: column;
+    width: 17.117%;
+    height: 300px;
+    margin: 0 15px;
+  }
+
+  &__year p{
+    margin: 0;
+  }
+
+  &__number-of-years{
+    @include font($weight: 500, $size: 72px, $height: 107px);
+    color: $colorAccent;
+  }
+
+  &__year-text{
+    @include font($weight: 500, $size: 36px, $height: 53px);
+    color: black;
+  }
+
+  &__market-text{
+    @include font($weight: 500, $size: 18px, $height: 27px);
+    color: $colorDarkGray;
+    text-transform: none;
+  }
 }
 
-.header__title{
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 95px;
-  letter-spacing: 0.02em;
-  font-style: normal;
-  margin: 112px 31% 0 31%;
-}
-
-.header__subtitle{
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
-  margin-top: 19px;
-}
-
-.header__years-info{
-  @include flex;
-  background-color: $colorGray;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  width: 58%;
-}
-
-.header__year{
-  @include flex;
-  flex-direction: column;
-  width: 17.117%;
-  height: 300px;
-  margin: 0 15px;
-}
-
-.header__year p{
-  margin: 0;
-}
-
-.header__number-of-years{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 72px;
-  line-height: 107px;
-  color: $colorAccent;
-}
-
-.header__year-text{
-  color: black;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 53px;
-
-}
-
-.header__market-text{
-  color: $colorDarkGray;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  text-transform: none;
-}
-/* Footer styles */
 
 .footer{
-  @include flex;
-  padding: 30px 21%;
+  @include font($size: 16px, $height: 22px);
+  padding: 30px 0;
   font-family: 'Open Sans', serif;
-  justify-content: space-between;
   background-color: $colorDark;
   color: $colorWhite;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
+
+  &__content{
+    @include flex;
+    justify-content: space-between;
+  }
 }
 
-/* Main info styles */
 
 .main-info{
-  margin-top: 150px;
+  margin: 150px 0;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+
+  &__menu{
+    margin-top: 50px;
+    margin-bottom: 140px;
+  }
+
+  &__menu-title{
+    @include font($weight: 500, $size: 24px, $height: 36px);
+    color: $colorAccent;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__menu-description {
+    @include font($size: 16px, $height: 22px);
+    margin-top: 22px;
+    text-transform: none;
+    color: $colorDarkGray;
+    width: 85%;
+    font-family: 'Open Sans', serif;
+  }
+
+  &__menu-row{
+    text-align: left;
+    margin-bottom: 35px;
+  }
+
+
+  &__title{
+    @include font($weight: 500, $size: 36px, $height: 53px);
+    margin-bottom: 64px;
+    text-transform: uppercase;
+  }
+
+  &__jobs-row{
+    @include flex;
+  }
+
+  &__jobs{
+    margin-top: 45px;
+    margin-bottom: 130px;
+  }
+
+  &__reviews{
+    @include flex;
+    text-align: left;
+    margin-top: 64px;
+    margin-bottom: 205px;
+  }
+
+  &__review{
+    width: 350px;
+    height: 259px;
+    margin: 0 15px;
+    text-transform: none;
+    font-weight: normal;
+    color: $colorDarkGray;
+  }
+
+  &__description{
+    @include font($size: 14px, $height: 21px);
+    padding: 38px 28px;
+    background-color: $colorGray;
+    font-family: 'Open Sans', serif;
+  }
+
+  &__from{
+    @include font($weight: 500, $size: 21px, $height: 31px, $spacing: 0.02em);
+    color: $colorDark;
+    margin-top: 28px;
+  }
+
+  &__review-company{
+    color: $colorAccent;
+  }
+
+  &__contacts{
+    @include flex;
+    text-transform: uppercase;
+    font-size: 150%;
+    padding: 0 21%;
+    margin-top: 60px;
+    margin-bottom: 150px;
+  }
+
+  &__contact{
+    width: 255px;
+    height: 191px;
+    margin: 0 15px;
+  }
+
+  &__contact-icon{
+    width: auto;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  &__contact-info{
+    @include font($weight: 500, $size: 24px, $height: 36px);
+    text-align: center;
+  }
+
+  &__contact-type{
+    @include font($weight: 500, $size: 24px, $height: 36px);
+    color: $colorDarkGray;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__contact-email{
+    @include font($weight: 500, $size: 24px, $height: 36px);
+    color: $colorAccent;
+    /* identical to box height */
+
+    text-align: center;
+  }
+
+  &__quotes{
+    width: 35px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  &__job-description{
+    @include font($weight: 500, $size: 21px, $height: 31px);
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+
+  &__job{
+    @include flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: $colorGray;
+    width: 350px;
+    height: 250px;
+    margin: 15px 15px;
+  }
+
+  &__job-image{
+    width: 4em;
+    height: auto;
+    margin-bottom: 20px;
+  }
 }
-
-.main-info__menu{
-  margin-top: 50px;
-  margin-bottom: 140px;
-}
-
-.main-info__menu-title{
-  color: $colorAccent;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  cursor: pointer;
-  outline: none;
-}
-
-.main-info__menu-description {
-  margin-top: 22px;
-  text-transform: none;
-  color: $colorDarkGray;
-  width: 50%;
-  font-family: 'Open Sans', serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.main-info__menu-row{
-  text-align: left;
-  padding-left: 21%;
-  margin-bottom: 35px;
-}
-
-
-.main-info__title{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 53px;
-  text-transform: uppercase;
-}
-
-.main-info__jobs-row{
-  @include flex;
-}
-
-.main-info__jobs{
-  margin-top: 45px;
-  margin-bottom: 130px;
-}
-
-.main-info__reviews{
-  @include flex;
-  text-align: left;
-  margin-top: 64px;
-  margin-bottom: 205px;
-}
-
-.main-info__review{
-  width: 350px;
-  height: 259px;
-  margin: 0 15px;
-  text-transform: none;
-  font-weight: normal;
-  color: $colorDarkGray;
-}
-
-.main-info__description{
-  padding: 38px 28px;
-  background-color: $colorGray;
-  font-family: 'Open Sans', serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.main-info__from{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 31px;
-  letter-spacing: 0.02em;
-  color: $colorDark;
-  margin-top: 28px;
-}
-
-.main-info__review-company{
-  color: $colorAccent;
-}
-
-.main-info__contacts{
-  @include flex;
-  text-transform: uppercase;
-  font-size: 150%;
-  padding: 0 21%;
-  margin-top: 60px;
-  margin-bottom: 150px;
-}
-
-.main-info__contact{
-  width: 255px;
-  height: 191px;
-  margin: 0 15px;
-}
-
-.main-info__contact-icon{
-  width: auto;
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-.main-info__contact-info{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  text-align: center;
-}
-
-.main-info__contact-type{
-  color: $colorDarkGray;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.main-info__contact-email{
-  color: $colorAccent;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  /* identical to box height */
-
-  text-align: center;
-}
-
-.main-info__quotes{
-  width: 35px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.main-info__job-description{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 31px;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-
-.main-info__job{
-  @include flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: $colorGray;
-  width: 350px;
-  height: 250px;
-  margin: 15px 15px;
-}
-
-.main-info__job-image{
-  width: 4em;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-/* Project info styles */
 
 .projects-info{
   margin-top: 250px;
-}
+  margin-bottom: 150px;
 
-.projects-info__projects{
-  @include flex;
-  text-align: left;
-  padding-left: 21%;
-  padding-right: 21%;
-  margin-bottom: 120px;
-}
+  &__projects{
+    @include flex;
+    text-align: left;
+    margin-bottom: 120px;
+  }
 
-.projects-info__project{
-  margin: 0 15px;
-}
+  &__project{
+    margin: 0 15px;
+    width: 350px;
+  }
 
-.projects-info__title{
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 53px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 50px;
-}
+  &__title{
+    @include font($weight: 500, $size: 36px, $height: 53px);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
 
-.projects-info__img{
-  width: 350px;
-  height: auto;
-}
+  &__img{
+    width: 100%;
+    height: auto;
+  }
 
-.projects-info__line{
-  margin-top: 40px;
-  width: 55px;
-  height: 6px;
-  background-color: $colorAccent;
-}
+  &__line{
+    margin-top: 40px;
+    width: 55px;
+    height: 6px;
+    background-color: $colorAccent;
+  }
 
-.projects-info__project-caption{
-  font-family: 'Open Sans', serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: $colorDarkGray;
-  margin-top: 15px;
-}
+  &__project-caption{
+    @include font($size: 16px, $height: 22px);
+    font-family: 'Open Sans', serif;
+    color: $colorDarkGray;
+    margin-top: 15px;
+  }
 
-.projects-info__project-name{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  color: $colorDark;
-  margin-top: 17px;
-}
-
-/* Contact info styles */
-
-.contact-info__title{
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 71px;
-  letter-spacing: 0.02em;
-}
-
-.contact-info__subtitle{
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: 0.02em;
+  &__project-name{
+    @include font($weight: 500, $size: 24px, $height: 36px);
+    color: $colorDark;
+    margin-top: 17px;
+  }
 }
 
 .contact-info{
-  @include red-contact;
-  @include flex;
-  padding-left: 21%;
-  padding-right: 21%;
-  justify-content: space-between;
-  align-items: center;
-  height: 181px;
-}
-
-.contact-info__information{
-  @include flex;
-  flex-direction: column;
-}
-
-.contact-info__img{
-  width: 18px;
-  height: 21px;
-  padding-right: 0.5em;
-  padding-bottom: 0.2em;
-  vertical-align: middle;
-}
-
-.contact-info__btn{
-  background-color: $colorWhite;
-  border: 0 solid white;
-  width: 175px;
-  height: 49px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.05em;
+  background-color: $colorAccent;
+  color: $colorWhite;
   text-transform: uppercase;
-}
+  height: 181px;
 
-/* Project Samples styles */
+  &__content{
+    @include flex;
+    padding-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title{
+    @include font($weight: bold, $size: 48px, $height: 71px, $spacing: 0.02em);
+  }
+
+  &__subtitle{
+    @include font($weight: bold, $size: 24px, $height: 36px, $spacing: 0.02em);
+  }
+
+  &__information{
+    @include flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  &__img{
+    width: 18px;
+    height: 21px;
+    padding-right: 0.5em;
+    padding-bottom: 0.2em;
+    vertical-align: middle;
+  }
+
+  &__btn{
+    @include font($weight: 500, $size: 14px, $height: 21px, $spacing: 0.05em);
+    background-color: $colorWhite;
+    border: 0 solid white;
+    width: 175px;
+    height: 49px;
+    text-transform: uppercase;
+  }
+}
 
 .projects-samples{
   @include flex;
   flex-wrap: wrap;
-}
 
-// TODO check how to place image without width: 33.33%
-.projects-samples__img{
-  width: 25%;
-  height: auto;
+  // TODO check how to place image without width: 33.33%
+  &__img{
+    width: 25%;
+    height: auto;
+  }
 }
-
-/* Partners styles */
 
 .partners-info{
   background-color: $colorDark;
@@ -445,28 +362,25 @@ body{
   text-align: center;
   text-transform: uppercase;
   padding-top: 100px;
-}
 
-.partners-info__title{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 53px;
-}
+  &__title{
+    @include font($weight: 500, $size: 36px, $height: 53px);
+  }
 
-.partners-info__partners{
-  @include flex;
-  margin-top: 50px;
-  padding-bottom: 95px;
-}
+  &__partners{
+    @include flex;
+    margin-top: 50px;
+    padding-bottom: 95px;
+  }
 
-.partners-info__partner{
-  margin: 0 32px;
-}
+  &__partner{
+    margin: 0 32px;
+  }
 
-.partners-info__img{
-  width: 170px;
-  height: 61px;
+  &__img{
+    width: 170px;
+    height: 61px;
+  }
 }
 
 /* Override styles */
@@ -475,34 +389,25 @@ body{
   margin-top: 100px;
 }
 
+.center-block{
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
 /* Media styles*/
 
-@media (max-width: 1680px) {
+
+
+@media (max-width: 1280px) {
   .header__title{
-    margin: 112px 26% 0 26%;
-  }
-}
-
-@media (max-width: 1440px) {
-  .header__title{
-    margin: 112px 20% 0 20%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .header__title{
-    margin: 112px 10% 0 10%;
+    margin: 0 3%;
   }
 
-  .contact-info__title{
-    font-size: 32px;
+  .header__years-info{
+    width: 58%;
   }
 
-  .contact-info__subtitle{
-    font-size: 18px;
-  }
-
-  .contact-info{
+  .center-block{
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -515,40 +420,27 @@ body{
     margin: 0 16px;
   }
 
-  .projects-info__img{
-    width: 250px;
-    height: auto;
-  }
-  .main-info__contacts{
-    padding: 0 10%;
+  .main-info__description{
+    font-size: 12px;
+    padding: 28px 18px;
   }
 }
 
 @media only screen and (max-device-width: 425px) {
+  .header__subtitle{
+    font-size: 25px;
+  }
   .projects-info__projects{
     flex-direction: column;
-    text-align: center;
-    padding-left: 21%;
-    padding-right: 21%;
-    margin-bottom: 120px;
-  }
-
-  .projects-info__line{
-    margin-left: 145px;
-    margin-top: 40px;
-    width: 250px;
-    height: 6px;
-    background-color: $colorAccent;
+    align-items: center;
   }
 
   .projects-info__project{
     margin-bottom: 50px;
   }
 
-  .projects-info__project-caption{
-    text-align: justify;
-    padding-left: 145px;
-    padding-right: 145px;
+  .contact-info__btn{
+    font-size: 12px;
   }
 
   .main-info__jobs-row{
@@ -570,7 +462,12 @@ body{
   }
 
   .main-info__review{
+    width: 70%;
     margin-bottom: 100px;
+  }
+
+  .main-info__description{
+    font-size: 20px;
   }
 
   .main-info__from{
