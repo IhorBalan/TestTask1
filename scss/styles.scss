@@ -349,7 +349,6 @@ body{
   @include flex;
   flex-wrap: wrap;
 
-  // TODO check how to place image without width: 33.33%
   &__img{
     width: 25%;
     height: auto;
@@ -393,10 +392,6 @@ body{
   max-width: 1110px;
   margin: 0 auto;
 }
-
-/* Media styles*/
-
-
 
 @media (max-width: 1280px) {
   .header__title{
